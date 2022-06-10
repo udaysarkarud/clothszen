@@ -95,9 +95,9 @@ const Footer = () => {
             </Center>
             <Right>
                 <Title>Contact</Title>
-                <ContactItem><Room style={{marginRight:"10px"}}/> Lorem ipsum dolor sit amet.</ContactItem>
-                <ContactItem><Phone style={{marginRight:"10px"}}/> +1 556 887 8749</ContactItem>
-                <ContactItem><Email style={{marginRight:"10px"}}/> contact@clothszen.shop</ContactItem>
+                <ContactItem><Room style={{marginRight:"10px",color:"#7858A6"}}/> Lorem ipsum dolor sit amet.</ContactItem>
+                <ContactItem><Phone style={{marginRight:"10px",color:"#7858A6"}}/> +1 556 887 8749</ContactItem>
+                <ContactItem><Email style={{marginRight:"10px",color:"#7858A6"}}/> contact@clothszen.shop</ContactItem>
                 <Payment src='https://user-images.githubusercontent.com/52581/44384465-5e312780-a570-11e8-9336-7b54978a9e64.png'/>
             </Right>
         </Container>

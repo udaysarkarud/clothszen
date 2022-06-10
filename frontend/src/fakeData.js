@@ -79,13 +79,5 @@ export const productsItems =[
     {
         id:8,
         img:'https://via.placeholder.com/300/300'
-    },
-    {
-        id:9,
-        img:'https://via.placeholder.com/300/300'
-    },
-    {
-        id:10,
-        img:'https://via.placeholder.com/300/300'
     }
 ]

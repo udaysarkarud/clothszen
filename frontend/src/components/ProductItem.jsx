@@ -26,7 +26,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5fbfd;
+    background-color: #E9D5DA;
     position: relative;
 
     &:hover ${Info}{
@@ -34,7 +34,6 @@ const Container = styled.div`
     }
 `;
 const Circel=styled.div`
-
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -65,7 +64,7 @@ const Icon=styled.div`
 const ProductItem = ({item}) => {
     return (
         <Container>
-            <Circel>
+            <Circel/>
                 <Image src={item.img}/>
                 <Info>
                     <Icon>
@@ -78,7 +77,7 @@ const ProductItem = ({item}) => {
                         <FavoriteBorderOutlined/>
                     </Icon>
                 </Info>
-            </Circel>
+
         </Container>
     );
 };
