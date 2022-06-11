@@ -11,6 +11,7 @@ const Container = styled.div`
         rgba(255,255,255,0.5),
         rgba(255,255,255,0.5)
     ), url("https://wallpapercave.com/wp/wp9764093.jpg") center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
