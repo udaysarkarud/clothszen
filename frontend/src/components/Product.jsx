@@ -61,7 +61,7 @@ const Icon=styled.div`
         transform: scale(1.1);
     }
 `;
-const ProductItem = ({item}) => {
+const Product = ({item}) => {
     return (
         <Container>
             <Circel/>
@@ -82,4 +82,4 @@ const ProductItem = ({item}) => {
     );
 };
 
-export default ProductItem;
+export default Product;

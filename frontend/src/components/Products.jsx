@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { productsItems } from "../fakeData";
-import ProductItem from "./ProductItem";
+import Product from "./Product";
 const Container = styled.div`
     padding: 20px;
     display: flex;
@@ -13,7 +13,7 @@ const Products = () => {
         <Container>
             {
                 productsItems.map(item=>(
-                    <ProductItem item={item} key={item.id}/>
+                    <Product item={item} key={item.id}/>
                 ))
             }
         </Container>
