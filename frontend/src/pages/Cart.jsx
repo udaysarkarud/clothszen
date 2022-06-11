@@ -85,14 +85,53 @@ const PriceDetail = styled.div`
 const ProductAmountContainer =styled.div`
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 `;
 const ProductAmount =styled.div`
     font-size: 24px;
     margin: 5px;
 `;
-const ProductPrice =styled.div``;
+const ProductPrice =styled.div`
+    font-size: 30px;
+    font-weight: 200;
+`;
+const Hr = styled.hr`
+    background-color: #E9D5DA;
+    border: none;
+    height: 1px;
+`;
 const Summary = styled.div`
     flex: 1;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    height: 50vh;
+`;
+const SummaryTitle = styled.h3`
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+`;
+const SummaryItem = styled.div`
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: ${props=>props.type==='total'&&'24px'};
+    font-weight: ${props=>props.type==='total'&&'500'};
+`;
+const SummaryItemText = styled.span``;
+const SummaryItemPrice = styled.span``;
+const Button = styled.button`
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #7858A6;
+    color:#7858A6;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover{
+        background-color: #7858A6;
+        color: white;
+    }
 `;
 const Cart = () => {
     return (
@@ -130,8 +169,47 @@ const Cart = () => {
                                 <ProductPrice>$ 30</ProductPrice>
                             </PriceDetail>
                         </Product>
+                        <Hr/>
+                        <Product>
+                            <ProductDetail>
+                                <Image src="https://via.placeholder.com/500/500"/>
+                                <Details>
+                                    <ProductName><b>Product:</b> BEST LAPTOP FROM HP</ProductName>
+                                    <ProductId><b>Id:</b> 678698765468</ProductId>
+                                    <ProductColor color='black' />
+                                    <ProductSize><b>Size:</b> 37.5</ProductSize>
+                                </Details>
+                            </ProductDetail>
+                            <PriceDetail>
+                                <ProductAmountContainer>
+                                    <Add/>
+                                    <ProductAmount>2</ProductAmount>
+                                    <Remove/>
+                                </ProductAmountContainer>
+                                <ProductPrice>$ 30</ProductPrice>
+                            </PriceDetail>
+                        </Product>
                     </Info>
-                    <Summary>Summary</Summary>
+                    <Summary>
+                        <SummaryTitle>ORDER SUMMARY</SummaryTitle>
+                        <SummaryItem>
+                            <SummaryItemText>Subtotal</SummaryItemText>
+                            <SummaryItemPrice>$ 80</SummaryItemPrice>
+                        </SummaryItem>
+                        <SummaryItem>
+                            <SummaryItemText>Estimated Shipping</SummaryItemText>
+                            <SummaryItemPrice>$ 5.90</SummaryItemPrice>
+                        </SummaryItem>
+                        <SummaryItem>
+                            <SummaryItemText>Shipping Discount</SummaryItemText>
+                            <SummaryItemPrice>$ -5.90</SummaryItemPrice>
+                        </SummaryItem>
+                        <SummaryItem type='total'>
+                            <SummaryItemText>Total</SummaryItemText>
+                            <SummaryItemPrice>$ 80</SummaryItemPrice>
+                        </SummaryItem>
+                        <Button>CHECKOUT NOW</Button>
+                    </Summary>
                 </Bottom>
             </Wrapper>
             <NewsLetter />
