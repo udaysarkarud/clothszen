@@ -9,7 +9,7 @@ const Container = styled.div`
 
 `;
 const Title = styled.h2`
-    font-size: 70px;
+    font-size: 35px;
     margin: 20px;
 `;
 const FilterContainer = styled.div`
@@ -30,7 +30,7 @@ const Select = styled.select`
     margin-right: 20px;
 `;
 const Option = styled.option`
-    
+
 `;
 const ProductList = () => {
     return (
