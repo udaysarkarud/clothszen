@@ -4,9 +4,11 @@ const app = express();
 import mongoose from 'mongoose';
 
 import dotenv from 'dotenv';
-import { router } from './routes/user.mjs';
-
 dotenv.config();
+
+import { router } from './routes/user.mjs';
+import {router as authRouter} from './routes/auth.mjs'
+
 
 
 
@@ -20,6 +22,7 @@ mongoose
     });
 app.use(express.json());
 
+app.use('/api/auth', authRouter);
 app.use('/api/users', router);
 
 app.listen(process.env.PORT || 5000, () => {

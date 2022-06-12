@@ -8,6 +8,6 @@ const ProductSchema = new mongoose.Schema({
     size: { type: String},
     color: { type: String},
     price: { type: Number, required: true}
-}, { timeseries: true })
+}, { timestamps: true })
 
 export default mongoose.model('Product', ProductSchema)

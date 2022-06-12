@@ -8,6 +8,6 @@ const CartSchema = new mongoose.Schema({
             quantity: { type: Number, default: 1 }
         }
     ]
-}, { timeseries: true })
+}, { timestamps: true })
 
 export default mongoose.model('Cart', CartSchema)
