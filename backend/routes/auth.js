@@ -1,6 +1,6 @@
 import express from 'express';
-import user from '../models/User.mjs'
-export const router = express.Router(); 
+import user from '../models/User.js'
+const router = express.Router(); 
 
 //REGISTER
 router.post('/register', async (req, res) => {
@@ -19,3 +19,5 @@ router.post('/register', async (req, res) => {
 
 
 })
+
+export default router;
