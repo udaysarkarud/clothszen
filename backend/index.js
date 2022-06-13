@@ -7,9 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import router from './routes/user.js';
-import authRouter from './routes/auth.js'
-
-
+import authRouter from './routes/auth.js';
 
 
 mongoose
