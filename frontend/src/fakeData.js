@@ -33,17 +33,20 @@ export const categories =[
     {
         id:1,
         img:'https://via.placeholder.com/500/500',
-        title:'SHIRT STYLE'
+        title:'SHIRT STYLE',
+        cat:'women'
     },
     {
         id:2,
         img:'https://via.placeholder.com/500/500',
-        title:'LOUNGEWEAR LOVE'
+        title:'LOUNGEWEAR LOVE',
+        cat:'cort'
     },
     {
         id:3,
         img:'https://via.placeholder.com/500/500',
-        title:'LIGHT JACKETS'
+        title:'LIGHT JACKETS',
+        cat:'jeans'
     }
 ]
 
