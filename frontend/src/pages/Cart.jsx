@@ -160,8 +160,8 @@ const Cart = () => {
                             <ProductDetail>
                                 <Image src="https://via.placeholder.com/500/500"/>
                                 <Details>
-                                    <ProductName><b>Product:</b> BEST LAPTOP FROM HP</ProductName>
-                                    <ProductId><b>Id:</b> 678698765468</ProductId>
+                                    <ProductName><b>Product:</b>GET BEST LAPTOP FROM HP</ProductName>
+                                    <ProductId><b>Id:</b> 678698765864</ProductId>
                                     <ProductColor color='black' />
                                     <ProductSize><b>Size:</b> 37.5</ProductSize>
                                 </Details>

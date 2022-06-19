@@ -61,12 +61,12 @@ const Register = () => {
             <Wrapper>
                 <Title>CREATE NEW ACCOUNT</Title>
                 <Form>
-                    <Input placeholder="name"/>
-                    <Input placeholder="last name"/>
-                    <Input placeholder="username"/>
-                    <Input placeholder="email"/>
-                    <Input placeholder="password"/>
-                    <Input placeholder="confirm password"/>
+                    <Input placeholder="First Name"/>
+                    <Input placeholder="Last Name"/>
+                    <Input placeholder="Username"/>
+                    <Input placeholder="Email"/>
+                    <Input placeholder="Password"/>
+                    <Input placeholder="Confirm Password"/>
                     <Agreement>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe culpa laborum nisi.</Agreement>
                     <Button>CREATE</Button>
                 </Form>

@@ -121,7 +121,7 @@ const Product = () => {
                 </ImageContainer>
                 <InfoContainer>
                     <Title>Lorem ipsum dolor sit amet.</Title>
-                    <Desc>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos autem dolores voluptas sit accusantium enim perferendis, tenetur aliquid illum sapiente qui nobis quas, possimus doloremque animi provident excepturi, voluptatibus quam.</Desc>
+                    <Desc>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ullam autem consequuntur quis repellendus reiciendis impedit magnam. Fugit non ullam officiis amet ipsum, reiciendis, est odio molestias consectetur doloribus laboriosam!</Desc>
                     <Price>$ 20</Price>
                     <FilterContainer>
                         <Filter>
