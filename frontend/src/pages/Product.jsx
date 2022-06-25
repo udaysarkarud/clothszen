@@ -10,6 +10,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import { publicRequest } from "../requestMethods";
+import { useDispatch } from "react-redux";
+import { addProduct } from "../redux/cartRedux";
 
 const Container = styled.div`
 
@@ -122,6 +124,7 @@ const Product = () => {
     const [quantity, setQuantity] = useState(1);
     const [color, setColor] = useState('');
     const [size, setSize] = useState('');
+    const dispatch = useDispatch();
 
     useEffect(() => {
         const getProduct = async () => {
@@ -134,15 +137,15 @@ const Product = () => {
         };
         getProduct();
     }, [id])
-    const handleQuantity=(type)=>{
-        if(type === 'dec'){
-           quantity>1 && setQuantity(quantity-1)
-        }else{
-            setQuantity(quantity+1)
+    const handleQuantity = (type) => {
+        if (type === 'dec') {
+            quantity > 1 && setQuantity(quantity - 1)
+        } else {
+            setQuantity(quantity + 1)
         }
     }
-    const handleClick=()=>{
-
+    const handleClick = () => {
+        dispatch(addProduct({ ...product, quantity, color, size }));
     };
     return (
         <Container>
@@ -160,12 +163,12 @@ const Product = () => {
                         <Filter>
                             <FilterTitle>Color</FilterTitle>
                             {product?.color?.map(c => (
-                                <FilterColor color={c} key={c} onClick={()=>setColor(c)}/>
+                                <FilterColor color={c} key={c} onClick={() => setColor(c)} />
                             ))}
                         </Filter>
                         <Filter>
                             <FilterTitle>Size</FilterTitle>
-                            <FilterSize onClick={(e)=>setSize(e.target.value)}>
+                            <FilterSize onClick={(e) => setSize(e.target.value)}>
                                 {product?.size?.map(s => (
                                     <FilterSizeOption key={s}>{s}</FilterSizeOption>
                                 ))}
